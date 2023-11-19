@@ -6,6 +6,7 @@ UAE/EUAE is under GPL2, but headers will be under LGPL so you safely to link wit
 
 (UAE - The Un*x Amiga Emulator)
   
-Custom chip emulation
-(c) 1995 Bernd Schmidt, Alessandro Bissacco
-(c) 2002 - 2005 Toni Wilen
+## Custom chip emulation
+
+    (c) 1995 Bernd Schmidt, Alessandro Bissacco
+    (c) 2002 - 2005 Toni Wilen
