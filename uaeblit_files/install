@@ -1,0 +1,10 @@
+copy /include/#? sdk:Include/include_h/ all
+
+IF EXISTS uaeblit.library
+copy uaeblit.library libs:
+avail flush
+else
+echo uaeblit.library not found
+endif
+
+

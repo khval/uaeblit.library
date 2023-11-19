@@ -1,0 +1,7 @@
+copy /include/#? sdk:Include/include_h/ all
+
+IF EXISTS euae-blit.library
+copy euae-blit.library libs:
+avail flush
+endif
+

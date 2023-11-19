@@ -1,0 +1,34 @@
+.key target_lha
+.bra {
+.ket }
+
+setenv lhafile=ram:euae_blit_library.lha
+
+if exists ram:euae_blit_library
+	delete ram:euae_blit_library all
+endif
+
+if exists ram:euae_blit_library.lha
+	delete ram:euae_blit_library.lha
+endif
+
+makedir ram:euae_blit_library
+makedir ram:euae_blit_library/libs
+makedir ram:euae_blit_library/Include
+makedir ram:euae_blit_library/Include/include_h/
+makedir ram:euae_blit_library/lvo
+
+copy /package ram:euae_blit_library all
+copy /readme.txt ram:euae_blit_library/readme.txt
+copy /include/#? ram:euae_blit_library/Include/include_h/ all
+
+IF EXISTS euae_blit.library
+	copy euae_blit.library ram:euae_blit_library/libs
+else
+	echo euae_blit.library not found
+endif
+
+lha -er a $lhafile ram:euae_blit_library >NIL:
+lha L $lhafile
+;delete ram:euae_blit_library all 
+
