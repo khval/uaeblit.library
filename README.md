@@ -3,7 +3,7 @@ A library based on uae blitter code.
 
 AmigaOS4.1 library based on UAE blitter, 
 
-(Currently libblitter.library is one you should use, uaeblit.library is just a experiment,
+(Currently libblitter.library is the one you should use, uaeblit.library is just a experiment,
 to see if the uae blitter worked better, currently it doesn't for unknown reasons.)
 
 UAE/EUAE is under GPL2, but headers will be under LGPL so you safely to link with it.
